@@ -1,0 +1,29 @@
+{
+  "name": "rollbot",
+  "version": "1.0.0",
+  "description": "Discord bot used to roll a d20",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config utilities/deploy-commands.js && node -r dotenv/config index.js",
+    "upload-commands": "node -r dotenv/config utilities/deploy-commands.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HunterMuratore/RollBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HunterMuratore/RollBot/issues"
+  },
+  "dependencies": {
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.3",
+    "node": "^19.6.1"
+  },
+  "homepage": "https://github.com/HunterMuratore/RollBot#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.8.3"
+  }
+}
