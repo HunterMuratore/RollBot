@@ -9,9 +9,6 @@ if (!process.env.BOT_TOKEN) {
   throw console.error;
 }
 
-// Anonymous object that collects all of the database connections and passes them to the commands
-var commandContext = {};
-
 const BOT = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
 });
@@ -48,7 +45,7 @@ BOT.on(Events.InteractionCreate, async interaction => {
     }
 
     try {
-        await command.execute(interaction, commandContext);
+        await command.execute(interaction);
       } catch (error) {
         console.error(error);
         await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });

@@ -4,8 +4,7 @@
   "description": "Discord bot used to roll a d20",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config utilities/deploy-commands.js && node -r dotenv/config index.js",
-    "upload-commands": "node -r dotenv/config utilities/deploy-commands.js"
+    "start": "node -r dotenv/config utilities/deploy-commands.js && node -r dotenv/config index.js"
   },
   "repository": {
     "type": "git",
