@@ -28,9 +28,9 @@ module.exports = {
         var final = roll + start;
 
         if (final === 20) {
-            await interaction.reply("You rolled a " + roll + "\nAssist successful!");
+            await interaction.reply("You rolled a " + roll + "\n" + start + " + " + roll + " = " + final + "\nAssist successful!");
         } else if (final > 20) {
-            await interaction.reply("You rolled a " + roll + "\nAssist failed :()");
+            await interaction.reply("You rolled a " + roll + "\n" + start + " + " + roll + " = " + final + "\nAssist failed :()");
         } else {
             await interaction.reply("You rolled a " + roll + "\n" + start + " + " + roll + " = " + final + "\nTry another assist!" );
         }

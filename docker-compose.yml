@@ -1,0 +1,8 @@
+services:
+  web:
+    image: huntermuratore/rollbot
+    container_name: rollbot
+    build: .
+    env_file:
+      - .env
+    restart: unless-stopped
