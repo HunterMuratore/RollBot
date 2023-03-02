@@ -1,0 +1,7 @@
+services:
+  rollbot:
+    image: outfortheseason/rollbot
+    container_name: rollbot
+    env_file:
+      - .env
+    restart: unless-stopped
