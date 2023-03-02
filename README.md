@@ -1,15 +1,15 @@
 # Roll Bot
+
 Discord bot used to roll a 20 sided die.
 
-INSTRUCTIONS:
+## INSTRUCTIONS
 
-1. Create a .env file and place your bot token, client ID and database inside as follows:
+1. Copy .env.template to .env and place your bot token, client ID inside as follows:
 
-BOT_TOKEN="******"
-CLIENT_ID="******"
+    BOT_TOKEN="******"
 
-2. Use npm install to install all dependencies listed in package.json
+    CLIENT_ID="******"
 
-3. Use npm start to deploy your commands and start the bot
+2. Run the compose file using `docker compose up -d`
 
-4. Roll!
+3. Roll!
